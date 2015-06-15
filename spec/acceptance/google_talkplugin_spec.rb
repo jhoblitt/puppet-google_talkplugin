@@ -14,5 +14,13 @@ describe 'google_talkplugin class' do
       apply_manifest(pp, :catch_failures => true)
       apply_manifest(pp, :catch_changes => true)
     end
+
+    describe package('google-talkplugin') do
+      it { should be_installed }
+    end
+
+    describe yumrepo('google-talkplugin') do
+      it { should be_enabled }
+    end
   end
 end

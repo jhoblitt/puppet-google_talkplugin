@@ -3,5 +3,6 @@ fixtures:
     stdlib:
       repo: 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
       ref:  '4.6.0'
+    rpmkey: 'https://github.com/stschulte/puppet-rpmkey.git'
   symlinks:
     google_talkplugin: "#{source_dir}"
